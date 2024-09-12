@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeons & Dragons Dice</title>
+    <link rel="stylesheet" href="dice.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dungeons & Dragons Dice</h1>
+        <p id="dice">
+            <h2><label for="numberOfDice">Number of dice:</h2></label>
+            <input type="number" id="numberOfDice" value="1">
+            <div class="buttonstyle">
+                <button type="button" onclick="rollDice(4)">D4</button>
+                <button type="button" onclick="rollDice(6)">D6</button>
+                <button type="button" onclick="rollDice(8)">D8</button>
+                <button type="button" onclick="rollDice(10)">D10</button>
+                <button type="button" onclick="rollDice(12)">D12</button>
+                <button type="button" onclick="rollDice(20)">D20</button>
+                <button type="button" onclick="rollDice(100)">D100</button>
+            </div>
+        </p>
+        <p id="result">
+        </p>
+        <script src="dice.js"></script>
+    </div>
+</body>
+</html>
